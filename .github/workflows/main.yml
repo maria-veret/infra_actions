@@ -67,7 +67,7 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            # Выполняет pull образа из DockerHub
+            # Выполняет pull образа  из DockerHub
             sudo docker pull mari4veret/infra_actions
             #остановка всех контейнеров
             sudo docker stop $(sudo docker ps -a -q)
